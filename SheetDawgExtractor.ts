@@ -1,5 +1,3 @@
-// R4WD4WG on GitHub
-
 // Office Scripts for Excel
 // Change extension to .osts if this does not work with Microsoft Excel.
 
