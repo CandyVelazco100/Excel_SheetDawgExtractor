@@ -53,14 +53,14 @@ function main(workbook: ExcelScript.Workbook) {
           if (cellText === 'Value2') {
             value2Row = cellIndex;
           } else if (cellText === 'Value3') {
-            value3row = cellIndex;
+            value3Row = cellIndex;
           }
         });
   
-        if (value2Row !== null && value3row !== null) {
+        if (value2Row !== null && value3Row !== null) {
           const cellValue1 = worksheet.getRange('B2').getValues();
           const cellValue2 = columnF.getCell(value2Row, 0).getValues();
-          const cellValue3 = columnF.getCell(value3row, 0).getValues();
+          const cellValue3 = columnF.getCell(value3Row, 0).getValues();
   
           const cellValue4 = (cellValue2[0][0] as number) + (cellValue3[0][0] as number);
   
